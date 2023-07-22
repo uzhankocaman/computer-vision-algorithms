@@ -55,7 +55,6 @@ def map2image(x, y, intrinsics):
 
 
 def create_constraint_matrix(x1, x2):
-    # TODO STUDENT
     nPoints = x1.shape[0]
     A = np.zeros((nPoints, 9))
 
@@ -66,7 +65,6 @@ def create_constraint_matrix(x1, x2):
 
 
 def get_rotation_translation_matrices(Rs, Ts, img1, img2):
-    # TODO STUDENT
     depth = []
     for i in range(4):
         nPoints = img1.shape[0]
